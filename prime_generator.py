@@ -1,4 +1,4 @@
-def prime(x):
+def prime(x,type=0):
     L=[i for i in range (x)]
     L[1]=0
     for j in L:
@@ -11,5 +11,11 @@ def prime(x):
             while m<x:
                 L[m]=0
                 m+=j
-    return L
-        
+    if type==0:
+        return L
+    elif type==1:
+        M=[]
+        for i in L:
+            if i!=0:
+                M.append(i)
+        return M
