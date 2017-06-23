@@ -1,4 +1,7 @@
+[[[list() for i in range(10)] for j in range (10)] for k in range(10)]
+
 count,n=1,0
+temp=None
 def extandsqr(x):
     summ=0
     for i in range (len(str(x))):
